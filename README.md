@@ -1,7 +1,23 @@
-# React Audio Player - Dribbble Inspirated
-
 [![GitHub License](https://img.shields.io/github/license/nicklima/react-audio-player)](https://github.com/nicklima/react-audio-player/)
 [![ISSUES](https://img.shields.io/github/issues/nicklima/react-audio-player)](https://github.com/nicklima/react-audio-player/issues)
+
+# React Audio Player - Dribbble Inspirated
+
+React Audio Player Inspired by Dribbble Layout made by [Arkadiusz Stanikowski](https://dribbble.com/vhs-kid)
+
+**Dark Mode**
+
+<img src="arkadiusz-stanikowski-music-player-exploration-dark-mode.webp" width="800" title="Music Player Exploration - Dark Mode"></br>
+
+**Light Mode**
+
+<img src="arkadiusz-stanikowski-music-player-exploration-light-mode.webp" width="800" title="Music Player Exploration - Light Mode"></br>
+
+## Credits
+
+- [Audio Player Inspiration](https://letsbuildui.dev/articles/building-an-audio-player-with-react-hooks)
+- [Dribbble Layout Dark](https://dribbble.com/shots/10221294-Music-player-exploration-1-1-dark-mode)
+- [Dribbble Layout Light](https://dribbble.com/shots/10184887-Music-player-exploration-1)
 
 ## Preview
 
