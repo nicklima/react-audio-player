@@ -21,7 +21,7 @@ React Audio Player Inspired by Dribbble Layout made by [Arkadiusz Stanikowski](h
 
 ## Preview
 
-[Click here](#) to view the code runing.
+[Click here](https://react-audio-player-dribbble.vercel.app) to view the code runing.
 
 ## Run the code on your local machine
 
@@ -36,6 +36,13 @@ git clone git@github.com:nicklima/react-audio-player.git
 yarn && yarn start
 
 ```
+
+## TODO
+
+Here are some features that i want to add. If you want to help, send me a PR
+
+- [ ] Improve performance
+- [ ] Swap the circular track to control audio
 
 ## License
 
