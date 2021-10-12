@@ -5,7 +5,7 @@ const MenuBottom = () => {
   const { settingsOn, setSettingsOn } = useStore();
   return (
     <Menu active={settingsOn}>
-      <Button onClick={() => setSettingsOn()}>
+      <Button active={settingsOn} onClick={() => setSettingsOn()}>
         <span></span>
         <span></span>
         <span></span>

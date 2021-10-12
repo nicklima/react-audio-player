@@ -19,13 +19,34 @@ export const Button = styled.button`
   span {
     margin-bottom: 6px;
     position: relative;
+    transition: all 0.5s;
     width: 35px;
+
+    &:nth-child(1) {
+      transform: ${({ active }) => (active ? "rotate(45deg)" : "initial")};
+    }
+
+    &:nth-child(2) {
+      display: ${({ active }) => (active ? "none" : "initial")};
+    }
+
+    &:nth-child(3) {
+      transform: ${({ active }) =>
+        active ? "rotate(-45deg) translate(1px, -5px)" : "initial"};
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      &:before {
+        opacity: ${({ active }) => (active ? "0" : "1")};
+      }
+    }
 
     &:before,
     &:after {
       background: ${({ theme }) => theme.text};
       content: "";
-      height: 3px;
+      height: 3.5px;
       position: absolute;
       transition: all 0.5s;
     }
