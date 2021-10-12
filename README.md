@@ -21,7 +21,7 @@ React Audio Player Inspired by Dribbble Layout made by [Arkadiusz Stanikowski](h
 
 ## Preview
 
-[Click here](https://react-audio-player-dribbble.vercel.app) to view the code runing.
+[Click here](https://react-audio-player-dribbble.vercel.app) to view the code runing or [click here to play with the code](https://codesandbox.io/s/react-player-dribbble-f9ius) in the sandbox.
 
 ## Run the code on your local machine
 
