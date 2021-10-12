@@ -21,7 +21,7 @@ React Audio Player Inspired by Dribbble Layout made by [Arkadiusz Stanikowski](h
 
 ## Preview
 
-[Click here](https://nicklima.github.io/react-audio-player/) to view the code runing.
+[Click here](#) to view the code runing.
 
 ## Run the code on your local machine
 
