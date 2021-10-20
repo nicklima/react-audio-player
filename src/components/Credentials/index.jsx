@@ -1,5 +1,5 @@
 import { useStore } from "store";
-import { Twitter, Dribbble, BuildUi } from "icons";
+import { Twitter, Dribbble, BuildUi, Music } from "icons";
 import { Credits, Title, Link } from "./styles";
 
 const Credentials = () => {
@@ -26,6 +26,11 @@ const Credentials = () => {
       >
         <BuildUi />
         <span>Audio Player Inspiration</span>
+      </Link>
+
+      <Link href="https://www.bensound.com" target="_blank">
+        <Music />
+        <span>Musics from Bensound.com</span>
       </Link>
     </Credits>
   );

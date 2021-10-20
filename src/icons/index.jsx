@@ -82,3 +82,15 @@ export const BuildUi = () => (
     </g>
   </svg>
 );
+
+export const Music = () => (
+  <svg width={24} height={24} fill="none">
+    <path
+      d="M12 7v10m-3-7v4M6 8v8m-3-5v2m12-9v16m3-11v6m3-4v2"
+      stroke="#fff"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
