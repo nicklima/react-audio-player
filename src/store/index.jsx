@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 
 import { theme as colors } from "styles/theme";
 import TrackList from "data/tracks.json";
@@ -14,20 +14,20 @@ export const useStore = create((set) => ({
   setTrack: (e) => set((state) => ({ currentTrack: state.tracks[e] })),
   trackInfo: {
     progress: 0,
-    duration: 0
+    duration: 0,
   },
   setTrackInfo: (e) => set(() => ({ trackInfo: e })),
   //Theme State
   theme: {
     name: "dark",
-    colors: colors.dark
+    colors: colors.dark,
   },
   setTheme: (e) =>
     set(() => ({
       theme: {
         name: e,
-        colors: colors[e]
-      }
+        colors: colors[e],
+      },
     })),
   //Sound Volume States
   sound: 0.5,
@@ -47,5 +47,5 @@ export const useStore = create((set) => ({
   // Credential States
   credentialsOn: false,
   setCredentialsOn: () =>
-    set((state) => ({ credentialsOn: !state.credentialsOn }))
+    set((state) => ({ credentialsOn: !state.credentialsOn })),
 }));
