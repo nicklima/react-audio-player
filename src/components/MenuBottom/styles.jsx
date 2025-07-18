@@ -6,7 +6,7 @@ export const Menu = styled.div`
   justify-content: center;
   margin: 20px 0;
   position: relative;
-  z-index: ${({ active }) => (active ? "5" : "3")};
+  z-index: ${({ $active }) => ($active ? "5" : "3")};
 `;
 
 export const Button = styled.button`
@@ -23,22 +23,22 @@ export const Button = styled.button`
     width: 35px;
 
     &:nth-child(1) {
-      transform: ${({ active }) => (active ? "rotate(45deg)" : "initial")};
+      transform: ${({ $active }) => ($active ? "rotate(45deg)" : "initial")};
     }
 
     &:nth-child(2) {
-      display: ${({ active }) => (active ? "none" : "initial")};
+      display: ${({ $active }) => ($active ? "none" : "initial")};
     }
 
     &:nth-child(3) {
-      transform: ${({ active }) =>
-        active ? "rotate(-45deg) translate(1px, -5px)" : "initial"};
+      transform: ${({ $active }) =>
+        $active ? "rotate(-45deg) translate(1px, -5px)" : "initial"};
     }
 
     &:nth-child(1),
     &:nth-child(3) {
       &:before {
-        opacity: ${({ active }) => (active ? "0" : "1")};
+        opacity: ${({ $active }) => ($active ? "0" : "1")};
       }
     }
 

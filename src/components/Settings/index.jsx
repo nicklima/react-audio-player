@@ -6,7 +6,7 @@ import { SettingsPanel, Title } from "./styles";
 const Settings = () => {
   const { settingsOn } = useStore();
   return (
-    <SettingsPanel active={settingsOn}>
+    <SettingsPanel $active={settingsOn}>
       <Title>Settings</Title>
       <ControlSwitch />
     </SettingsPanel>

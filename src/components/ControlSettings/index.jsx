@@ -12,24 +12,21 @@ const ControlSettings = ({ opened }) => {
       <Button
         alt="Shuffle Songs"
         title="Shuffle Songs"
-        active={shuffle}
-        onClick={() => setShuffle()}
-      >
+        $active={shuffle}
+        onClick={() => setShuffle()}>
         <Shuffle />
       </Button>
       <Button
         alt={altCloseOpen}
         title={altCloseOpen}
-        onClick={() => setShowList()}
-      >
+        onClick={() => setShowList()}>
         {opened ? <CloseButton /> : <ControlEars />}
       </Button>
       <Button
         alt="Repeat Song"
         title="Repeat Song"
-        active={repeat}
-        onClick={() => setRepeat()}
-      >
+        $active={repeat}
+        onClick={() => setRepeat()}>
         <Repeat />
       </Button>
     </GridSettings>

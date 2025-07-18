@@ -45,7 +45,7 @@ const ControlTime = () => {
   return (
     <SongTime>
       <Time>{totalTime}</Time>
-      <Time current>{playTime}</Time>
+      <Time $current={true}>{playTime}</Time>
     </SongTime>
   );
 };

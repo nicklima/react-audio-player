@@ -8,7 +8,7 @@ import {
   CurrentSong,
   CurrentArtist,
   CurrentName,
-  CurrentIcon
+  CurrentIcon,
 } from "./styles";
 
 const AudioListCurrent = () => {
@@ -18,7 +18,7 @@ const AudioListCurrent = () => {
   return (
     <Current onClick={() => setShowList()}>
       <CurrentFigure>
-        <ControlThumb small />
+        <ControlThumb $small={true} />
       </CurrentFigure>
       <CurrentSong>
         <CurrentName>{musicName}</CurrentName>

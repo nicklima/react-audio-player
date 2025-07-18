@@ -13,13 +13,13 @@ const ControlSwitch = () => {
 
   return (
     <GridSwitch>
-      <Button onClick={() => handleTheme()} active={theme.name === "light"}>
+      <Button onClick={() => handleTheme()} $active={theme.name === "light"}>
         <Sun />
       </Button>
       <Switch onClick={() => handleTheme()}>
-        <Slider active={theme.name === "dark"} />
+        <Slider $active={theme.name === "dark"} />
       </Switch>
-      <Button onClick={() => handleTheme()} active={theme.name === "dark"}>
+      <Button onClick={() => handleTheme()} $active={theme.name === "dark"}>
         <Moon />
       </Button>
     </GridSwitch>

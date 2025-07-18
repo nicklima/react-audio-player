@@ -6,7 +6,7 @@ export const SongList = styled.div`
   overflow: hidden;
   padding: 20px;
   position: absolute;
-  transform: translateY(${({ show }) => (show ? "0" : "200%")});
+  transform: translateY(${({ $show }) => ($show ? "0" : "200%")});
   transition: all 0.5s;
   width: 100%;
   z-index: 5;
@@ -29,9 +29,9 @@ export const Mask = styled.div`
   );
   height: 50px;
   width: 100%;
-  margin: ${({ inverse }) => (inverse ? "10px 0 -60px" : "-70px 0 10px")};
+  margin: ${({ $inverse }) => ($inverse ? "10px 0 -60px" : "-70px 0 10px")};
   position: relative;
   pointer-events: none;
-  transform: ${({ inverse }) => (inverse ? "rotate(180deg)" : "initial")};
+  transform: ${({ $inverse }) => ($inverse ? "rotate(180deg)" : "initial")};
   z-index: 5;
 `;

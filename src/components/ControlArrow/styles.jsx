@@ -12,5 +12,6 @@ export const Button = styled.button`
     width: 40px;
   }
 
-  transform: ${({ reverse }) => (reverse ? "rotate(180deg)" : "rotate(0deg)")};
+  transform: ${({ $reverse }) =>
+    $reverse ? "rotate(180deg)" : "rotate(0deg)"};
 `;

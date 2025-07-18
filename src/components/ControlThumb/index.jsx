@@ -5,10 +5,10 @@ import {
   ChartSVG,
   ChartSVGLoader,
   ChartSVGLine,
-  ChartSVGCircle
+  ChartSVGCircle,
 } from "./styles";
 
-const ControlThumb = ({ small }) => {
+const ControlThumb = ({ $small }) => {
   const { currentTrack, trackInfo } = useStore();
   const { albumImage } = currentTrack;
   const { progress, duration } = trackInfo;
@@ -17,22 +17,20 @@ const ControlThumb = ({ small }) => {
   return (
     <>
       <AlbumCover>
-        <AlbumFigure small={small} thumb={albumImage} />
-        <ChartSVG small={small}>
+        <AlbumFigure $small={$small} $thumb={albumImage} />
+        <ChartSVG $small={$small}>
           <ChartSVGLoader viewBox="0 0 36 36">
             <ChartSVGLine
-              small={small}
+              $small={$small}
               d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-            ></ChartSVGLine>
+          a 15.9155 15.9155 0 0 1 0 -31.831"></ChartSVGLine>
             <ChartSVGCircle
-              small={small}
+              $small={$small}
               strokeDasharray={`${trackBorder}, 100`}
               d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-            ></ChartSVGCircle>
+          a 15.9155 15.9155 0 0 1 0 -31.831"></ChartSVGCircle>
           </ChartSVGLoader>
         </ChartSVG>
       </AlbumCover>

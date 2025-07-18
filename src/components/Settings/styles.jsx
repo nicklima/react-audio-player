@@ -7,10 +7,10 @@ export const SettingsPanel = styled.div`
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  /* opacity: ${({ active }) => (active ? "1" : "0.7")}; */
   position: absolute;
   transition: 0.4s ease-in-out;
-  transform: ${({ active }) => (active ? "translateY(0)" : "translateY(100%)")};
+  transform: ${({ $active }) =>
+    $active ? "translateY(0)" : "translateY(100%)"};
   width: 100%;
   z-index: 5;
 `;

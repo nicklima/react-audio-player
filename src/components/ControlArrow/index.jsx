@@ -28,11 +28,10 @@ const ControlArrow = ({ title, reverse }) => {
 
   return (
     <Button
-      reverse={reverse}
+      $reverse={reverse}
       alt={title}
       title={title}
-      onClick={() => handleClick()}
-    >
+      onClick={() => handleClick()}>
       <Arrow />
     </Button>
   );

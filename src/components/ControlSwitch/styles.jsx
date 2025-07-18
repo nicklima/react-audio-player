@@ -10,7 +10,7 @@ export const GridSwitch = styled.div`
 export const Button = styled.button`
   background: transparent;
   cursor: pointer;
-  opacity: ${({ active }) => (active ? "1" : "0.5")};
+  opacity: ${({ $active }) => ($active ? "1" : "0.5")};
 
   svg {
     fill: ${({ theme }) => theme.text};
@@ -26,7 +26,7 @@ export const Switch = styled.label`
 `;
 
 export const Slider = styled.label`
-  background-color: ${({ active, theme }) => (active ? "white" : "black")};
+  background-color: ${({ $active, theme }) => ($active ? "white" : "black")};
   border-radius: 34px;
   bottom: 0;
   cursor: pointer;
@@ -45,7 +45,7 @@ export const Slider = styled.label`
     left: 4px;
     position: absolute;
     transition: 0.4s;
-    transform: ${({ active }) => (active ? "translateX(32px)" : "initial")};
+    transform: ${({ $active }) => ($active ? "translateX(32px)" : "initial")};
     width: 20px;
   }
 `;

@@ -26,13 +26,13 @@ export const Button = styled.button`
     width: 35px;
 
     &:first-child {
-      transform: ${({ active }) => (active ? "rotate(50deg)" : "initial")};
+      transform: ${({ $active }) => ($active ? "rotate(50deg)" : "initial")};
     }
 
     &:last-child {
-      transform: ${({ active }) =>
-        active ? "rotate(-50deg) translate(5px, -5px)" : "initial"};
-      width: ${({ active }) => (active ? "35px" : "27px")};
+      transform: ${({ $active }) =>
+        $active ? "rotate(-50deg) translate(5px, -5px)" : "initial"};
+      width: ${({ $active }) => ($active ? "35px" : "27px")};
     }
   }
 `;

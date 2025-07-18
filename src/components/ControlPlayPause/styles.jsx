@@ -19,13 +19,13 @@ export const Button = styled.button`
 
     &:nth-child(1) {
       border-radius: 0 3px 3px 0;
-      width: ${({ isPlaying }) => (isPlaying ? "8px" : "5px")};
+      width: ${({ $isPlaying }) => ($isPlaying ? "8px" : "5px")};
     }
 
     &:nth-child(1),
     &:nth-child(2) {
-      visibility: ${({ isPlaying }) => (isPlaying ? "visible" : "hidden")};
-      opacity: ${({ isPlaying }) => (isPlaying ? "1" : "0")};
+      visibility: ${({ $isPlaying }) => ($isPlaying ? "visible" : "hidden")};
+      opacity: ${({ $isPlaying }) => ($isPlaying ? "1" : "0")};
       width: 8px;
     }
 
@@ -45,21 +45,21 @@ export const Button = styled.button`
     &:nth-child(5) {
       border-radius: 3px;
       position: absolute;
-      opacity: ${({ isPlaying }) => (isPlaying ? "0" : "1")};
-      visibility: ${({ isPlaying }) => (isPlaying ? "hidden" : "visible")};
+      opacity: ${({ $isPlaying }) => ($isPlaying ? "0" : "1")};
+      visibility: ${({ $isPlaying }) => ($isPlaying ? "hidden" : "visible")};
       width: 5px;
     }
 
     &:nth-child(4) {
-      left: ${({ isPlaying }) => (isPlaying ? "20px" : "32px")};
-      transform: ${({ isPlaying }) =>
-        isPlaying ? "initial" : "rotate(-115deg) translate(-6px, 0px)"};
+      left: ${({ $isPlaying }) => ($isPlaying ? "20px" : "32px")};
+      transform: ${({ $isPlaying }) =>
+        $isPlaying ? "initial" : "rotate(-115deg) translate(-6px, 0px)"};
     }
 
     &:nth-child(5) {
-      left: ${({ isPlaying }) => (isPlaying ? "20px" : "43px")};
-      transform: ${({ isPlaying }) =>
-        isPlaying ? "initial" : "rotate(119deg) translate(0px, 10px)"};
+      left: ${({ $isPlaying }) => ($isPlaying ? "20px" : "43px")};
+      transform: ${({ $isPlaying }) =>
+        $isPlaying ? "initial" : "rotate(119deg) translate(0px, 10px)"};
     }
   }
 `;

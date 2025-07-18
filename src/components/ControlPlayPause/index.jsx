@@ -8,10 +8,9 @@ const ControlPlayPause = ({ transparent }) => {
     <Button
       alt={altTitle}
       title={altTitle}
-      isPlaying={isPlaying}
+      $isPlaying={isPlaying}
       onClick={() => setIsPlaying()}
-      transparent={transparent}
-    >
+      transparent={transparent}>
       <span></span>
       <span></span>
       <span></span>

@@ -11,9 +11,9 @@ const AudioList = () => {
   const { showList, tracks, currentTrack } = useStore();
 
   return (
-    <SongList show={showList}>
+    <SongList $show={!!showList}>
       <AudioListCurrent />
-      <Mask inverse />
+      <Mask $inverse={true} />
       <ListScroll>
         {tracks
           .filter((track) => track.musicName !== currentTrack.musicName)
@@ -22,7 +22,7 @@ const AudioList = () => {
           })}
       </ListScroll>
       <Mask />
-      <Controls transparent />
+      <Controls $transparent={true} />
       <ControlSound />
       <ControlSettings opened />
     </SongList>

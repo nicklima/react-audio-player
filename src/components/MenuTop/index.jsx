@@ -7,7 +7,7 @@ const MenuTop = () => {
   return (
     <>
       <Menu>
-        <Button active={credentialsOn} onClick={() => setCredentialsOn()}>
+        <Button $active={credentialsOn} onClick={() => setCredentialsOn()}>
           <span></span>
           <span></span>
         </Button>

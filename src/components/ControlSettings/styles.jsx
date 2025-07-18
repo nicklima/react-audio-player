@@ -12,8 +12,8 @@ export const GridSettings = styled.div`
 `;
 
 export const Button = styled.button`
-  background: ${({ active, theme }) =>
-    active ? theme.controlButton : "transparent"};
+  background: ${({ $active, theme }) =>
+    $active ? theme.controlButton : "transparent"};
   border-radius: 5px;
   cursor: pointer;
   display: inline-flex;

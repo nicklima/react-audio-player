@@ -11,6 +11,6 @@ export const Time = styled.span`
   color: ${({ theme }) => theme.text};
   font-size: 14px;
   font-weight: 800;
-  opacity: ${({ current }) => (current ? "0.5" : "1")};
+  opacity: ${({ $current }) => ($current ? "0.5" : "1")};
   transition: all 0.5s;
 `;
